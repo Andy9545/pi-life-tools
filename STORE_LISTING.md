@@ -65,9 +65,7 @@
 
 ---
 
-## 5. 聯絡方式(需你填入實際資訊)
-
-> ⚠️ 以下為 placeholder,上架前請替換為你的真實聯絡管道。
+## 5. 聯絡方式
 
 - 電子郵件:`wayen168@gmail.com`
 - Pi Browser 內聯絡:`wayen168@gmail.com`
@@ -77,17 +75,24 @@
 
 ## 6. 視覺資產
 
-- **logo**:`public/favicon.svg`(Pi 字樣紫色圓角)
-- **預覽圖**:`previews/` 目錄(由 Playwright 截圖產生,見下節)
+| 資產 | 路徑 | 狀態 |
+|------|------|------|
+| Favicon | `public/favicon.svg` | ✓ |
+| App Studio logo 1024 | `public/logo-1024.png` | ✓ |
+| 上架預覽圖 ×12 | `previews/01-…` ~ `12-…` | ✓ 已產 |
+
+建議上傳預覽圖優先順序:`01-home-dashboard.png`、`11-data-card.png`、`10-compound-result.png`、`02-financial-health.png`。
 
 ---
 
 ## 7. 部署資訊
 
 - **型態**:靜態 Web App(純 client-side)
-- **build 指令**:`npm run build` → 產出 `dist/`
-- **託管需求**:任一靜態主機 + HTTPS(GitHub Pages / Netlify / Vercel / 其他)
-- **Pi SDK sandbox**:testnet 用 `VITE_PI_SANDBOX=true`,mainnet 用 `VITE_PI_SANDBOX=false`
+- **Repo**:https://github.com/Andy9545/pi-life-tools
+- **build 指令**:`npm run build` → 產出 `dist/`,再複製到 `docs/`(目前已有一份 build 在 `docs/`)
+- **GitHub Pages 預期網址**:`https://andy9545.github.io/pi-life-tools/`
+- **Pages 狀態(2026-08-19 檢查)**:尚未啟用(公開 URL 回 404)→ **需你在 GitHub 手動開啟**
+- **Pi SDK sandbox**:預設 sandbox(`VITE_PI_SANDBOX` 未設或非 `"false"`)。正式 mainnet 需 build 前設 `VITE_PI_SANDBOX=false`
 - **無 backend / 無 API key / 無 payment**:v1 不需要後端、API key 或 Pi payment 資格
 
 ---
@@ -96,13 +101,13 @@
 
 | 面向 | 狀態 |
 |------|------|
-| 功能 | ✓ 8 工具全流程實測 |
+| 功能 | ✓ 8 工具 + typecheck/lint/62 tests 通過 |
 | 內容 | ✓ 名實相符 |
-| 資料 | ✓ 無敏感資料 |
+| 資料 | ✓ 無敏感資料,Local Storage only |
 | 權利 | ✓ 純自製 + OSS |
-| Pi 整合 | ✓ SDK 已測(待 Pi Browser 實測登入) |
-| 後端 | ✓ 不依賴,Local Storage |
-| 費用 | 待進 App Studio 看當下提示 |
-| 發現性 | description ✓ / category ✓ / 預覽圖待產 / link 待部署 |
+| Pi 整合 | △ SDK 已接(待你在 Pi Browser 實測登入/分享) |
+| 後端 | ✓ 不依賴 |
+| 費用 | 待你進 App Studio 看當下提示 |
+| 發現性 | description ✓ / category 建議 ✓ / 預覽圖 ✓ / **公開 link 待你開 Pages** |
 | 安全性 | ✓ 無賭博/估值/惡意 |
-| 維運 | git 版控 ✓ / 聯絡方式待填 |
+| 維運 | git 版控 ✓ / 聯絡信箱 ✓ |
