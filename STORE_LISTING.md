@@ -69,9 +69,9 @@
 
 > ⚠️ 以下為 placeholder,上架前請替換為你的真實聯絡管道。
 
-- 電子郵件:`[你的 email]`
-- Pi Browser 內聯絡:`[可選]`
-- 回報錯誤:`[email 或 Fireside Forum 帳號]`
+- 電子郵件:`wayen168@gmail.com`
+- Pi Browser 內聯絡:`wayen168@gmail.com`
+- 回報錯誤:`wayen168@gmail.com`
 
 ---
 
