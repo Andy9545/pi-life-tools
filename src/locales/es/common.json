@@ -1,0 +1,274 @@
+{
+  "site": { "name": "Pi Life Tools", "tagline": "Herramientas de vida para el ecosistema Pi." },
+  "language": {
+    "label": "Idioma",
+    "autoDetected": "Detectado automáticamente",
+    "zh-TW": "繁體中文",
+    "zh-CN": "简体中文",
+    "en": "English",
+    "ja": "日本語",
+    "ko": "한국어",
+    "es": "Español"
+  },
+  "nav": { "home": "My Life", "settings": "Ajustes" },
+  "common": {
+    "calculate": "Calcular",
+    "recalculate": "Recalcular",
+    "reset": "Reiniciar",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "share": "Compartir",
+    "shared": "Compartido",
+    "download": "Descargar imagen",
+    "preview": "Vista previa",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "backHome": "Volver a My Life",
+    "result": "Resultado",
+    "generateCard": "Generar Tarjeta de Datos de Vida",
+    "viewCard": "Ver Tarjeta de Datos",
+    "disclaimer": "Los resultados son estimaciones y solo referenciales.",
+    "years": "años",
+    "months": "meses",
+    "weeks": "semanas",
+    "days": "días",
+    "hours": "horas",
+    "minutes": "minutos",
+    "percent": "%",
+    "loading": "Cargando…",
+    "optional": "opcional",
+    "perHour": "por hora",
+    "perMonth": "por mes",
+    "fillAll": "Por favor, completa los campos."
+  },
+  "dashboard": {
+    "title": "My Life",
+    "subtitle": "Tus herramientas y datos de vida en un solo lugar.",
+    "lifeScore": "Puntaje de Vida",
+    "lifeScoreEmpty": "Usa las herramientas para construir tu Puntaje de Vida.",
+    "recentCards": "Tarjetas Recientes",
+    "recentCardsEmpty": "Aún no hay tarjetas guardadas. Genera una desde cualquier herramienta.",
+    "tools": "Herramientas",
+    "welcome": "Bienvenido"
+  },
+  "tools": {
+    "financial-health": {
+      "name": "Salud financiera",
+      "tagline": "Revisa tu puntaje de salud financiera.",
+      "icon": "💰",
+      "intro": "Ingresa tus finanzas mensuales para obtener tu puntaje de salud financiera.",
+      "inputs": {
+        "monthlyIncome": "Ingreso mensual",
+        "monthlyExpenses": "Gastos mensuales",
+        "monthlySavings": "Ahorro mensual",
+        "debt": "Deuda total",
+        "emergencyFund": "Fondo de emergencia"
+      },
+      "results": {
+        "savingsRate": "Tasa de ahorro",
+        "incomeExpenseRatio": "Proporción de gastos",
+        "emergencyFundMonths": "Cobertura del fondo",
+        "financialHealthScore": "Puntaje de salud financiera"
+      },
+      "rec": {
+        "savings": "Intenta ahorrar al menos el 10% de tus ingresos.",
+        "emergency": "Crea un fondo de emergencia de 3 a 6 meses de gastos.",
+        "debt": "Tu deuda es alta respecto a tus ingresos. Considera un plan de pago.",
+        "expenses": "Tus gastos se acercan a tus ingresos. Revisa tus gastos.",
+        "good": "Tu salud financiera se ve sólida. Sigue así."
+      },
+      "summary": "Puntaje de salud financiera: {score}/100."
+    },
+    "compound-interest": {
+      "name": "Interés compuesto",
+      "tagline": "Mira cómo crecen tus ahorros con el tiempo.",
+      "icon": "📈",
+      "intro": "Mira cómo crecen tus ahorros con interés compuesto.",
+      "inputs": {
+        "principal": "Capital inicial",
+        "monthlyContribution": "Aporte mensual",
+        "annualRate": "Tasa de rendimiento anual",
+        "years": "Años de inversión"
+      },
+      "results": {
+        "finalAmount": "Monto final",
+        "totalPrincipal": "Capital total",
+        "totalInterest": "Ganancias estimadas"
+      },
+      "note": "Solo son estimaciones — no garantizan rendimientos reales.",
+      "summary": "Monto final: {amount} ({years} años).",
+      "table": { "year": "Año", "balance": "Saldo", "principal": "Capital" }
+    },
+    "goal-planner": {
+      "name": "Planificador de metas",
+      "tagline": "Planifica y sigue tus metas de vida.",
+      "icon": "🎯",
+      "intro": "Planifica y sigue tu progreso hacia una meta de vida.",
+      "inputs": {
+        "goalType": "Tipo de meta",
+        "goalAmount": "Monto de la meta",
+        "currentAmount": "Monto actual",
+        "monthlyContribution": "Aporte mensual",
+        "annualRate": "Rendimiento esperado",
+        "targetDate": "Fecha objetivo"
+      },
+      "types": {
+        "savings": "Ahorro",
+        "travel": "Viaje",
+        "emergency": "Fondo de emergencia",
+        "education": "Educación",
+        "other": "Otro"
+      },
+      "results": {
+        "progressPercent": "Progreso",
+        "estimatedCompletion": "Finalización estimada",
+        "estimatedMonths": "Meses estimados",
+        "monthlyNeeded": "Aporte mensual necesario",
+        "remainingAmount": "Restante para la meta"
+      },
+      "summary": "Meta completada un {progress}%."
+    },
+    "life-time": {
+      "name": "Tiempo de vida",
+      "tagline": "Ve tu línea de tiempo de vida de un vistazo.",
+      "icon": "⏳",
+      "intro": "Reflexiona sobre tu línea de tiempo de vida. La expectativa de vida es tu propia configuración, no una predicción.",
+      "inputs": {
+        "birthDate": "Fecha de nacimiento",
+        "lifeExpectancy": "Expectativa de vida"
+      },
+      "results": {
+        "ageYears": "Edad actual",
+        "remainingYears": "Años restantes",
+        "remainingMonths": "Meses restantes",
+        "remainingWeeks": "Semanas restantes",
+        "lifeProgressPercent": "Progreso de vida"
+      },
+      "note": "La expectativa de vida es una configuración personal para reflexionar — no es una predicción médica.",
+      "summary": "Progreso de vida: {progress}%."
+    },
+    "mortgage": {
+      "name": "Hipoteca",
+      "tagline": "Estima tus pagos mensuales de hipoteca.",
+      "icon": "🏠",
+      "intro": "Estima tu pago mensual y el interés total de la hipoteca.",
+      "inputs": {
+        "homePrice": "Precio de la vivienda",
+        "downPayment": "Enganche",
+        "annualRate": "Tasa de interés",
+        "years": "Plazo del préstamo"
+      },
+      "results": {
+        "loanAmount": "Monto del préstamo",
+        "monthlyPayment": "Pago mensual",
+        "totalPayment": "Pago total",
+        "totalInterest": "Interés total",
+        "interestRatio": "Proporción de interés"
+      },
+      "summary": "Pago mensual: {amount}."
+    },
+    "debt-payoff": {
+      "name": "Pago de deudas",
+      "tagline": "Planifica tu camino para salir de deudas.",
+      "icon": "💳",
+      "intro": "Mira cuánto tiempo toma quedar libre de deudas.",
+      "inputs": {
+        "debtAmount": "Monto de la deuda",
+        "annualRate": "Tasa de interés",
+        "monthlyPayment": "Pago mensual"
+      },
+      "results": {
+        "payoffMonths": "Tiempo para pagar",
+        "totalInterest": "Interés total",
+        "totalPayment": "Pago total"
+      },
+      "summary": "Libre de deudas en unos {months} meses."
+    },
+    "life-decision": {
+      "name": "Decisión de vida",
+      "tagline": "Piensa una decisión paso a paso.",
+      "icon": "⚖️",
+      "intro": "Califica cada factor del 1 al 10 para pensar una decisión. Es una ayuda para pensar, no una respuesta.",
+      "criteria": {
+        "income": "Ingresos",
+        "growth": "Crecimiento",
+        "risk": "Riesgo",
+        "time": "Tiempo",
+        "freedom": "Libertad",
+        "family": "Familia",
+        "interest": "Interés",
+        "stability": "Estabilidad"
+      },
+      "results": {
+        "decisionScore": "Puntaje de decisión",
+        "strengths": "Fortalezas",
+        "attentions": "Factores a vigilar"
+      },
+      "scoreLabel": "1-10",
+      "conclusion": "Este puntaje refleja tus propias calificaciones y no es una respuesta definitiva.",
+      "summary": "Puntaje de decisión: {score}/10."
+    },
+    "time-value": {
+      "name": "Valor del tiempo",
+      "tagline": "Mira cuánto vale tu tiempo.",
+      "icon": "⏱️",
+      "intro": "Mira cuánto vale tu tiempo y cuánto cuestan las cosas en horas de trabajo.",
+      "inputs": {
+        "annualIncome": "Ingreso anual",
+        "weeklyHours": "Horas por semana",
+        "weeksPerYear": "Semanas por año",
+        "itemPrice": "Precio del artículo"
+      },
+      "results": {
+        "hourlyRate": "Valor por hora",
+        "minuteRate": "Valor por minuto",
+        "hoursForItem": "Horas de trabajo necesarias"
+      },
+      "itemResult": "Un artículo de {price} cuesta unas {hours} horas de trabajo.",
+      "summary": "Tu tiempo vale unos {rate} por hora."
+    }
+  },
+  "dataCard": {
+    "header": "MY LIFE DATA",
+    "brand": "PI LIFE TOOLS",
+    "generate": "Generar Tarjeta de Datos de Vida",
+    "preview": "Vista previa",
+    "save": "Guardar",
+    "share": "Compartir",
+    "download": "Descargar imagen",
+    "saved": "Tarjeta guardada en My Life.",
+    "shareTitle": "Mi Tarjeta de Datos de Vida"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "language": "Idioma",
+    "languageHint": "Elige tu idioma preferido.",
+    "currency": "Moneda",
+    "currencyHint": "Se usa para mostrar los montos.",
+    "resetData": "Reiniciar todos los datos",
+    "resetDataHint": "Borra tarjetas, historial y ajustes guardados en este dispositivo.",
+    "resetConfirm": "¿Eliminar todos los datos locales?",
+    "resetDone": "Se han reiniciado todos los datos locales.",
+    "piStatus": "Conexión Pi",
+    "piAvailable": "Conectado",
+    "piUnavailable": "No disponible (ejecutándose fuera de Pi Browser)",
+    "piUser": "Sesión iniciada como",
+    "piSignIn": "Iniciar sesión con Pi"
+  },
+  "errors": {
+    "empty": "Por favor, ingresa un valor.",
+    "notNumber": "Por favor, ingresa un número válido.",
+    "negative": "El valor no puede ser negativo.",
+    "zero": "El valor no puede ser cero.",
+    "tooLarge": "El valor es demasiado grande.",
+    "invalidDate": "Por favor, ingresa una fecha válida.",
+    "logicalConflict": "Estos valores no tienen sentido juntos.",
+    "divideByZero": "No se puede dividir por cero.",
+    "unreachable": "Esta meta no se puede alcanzar con los valores actuales.",
+    "insufficientPayment": "El pago mensual es menor que el interés. Aumenta el pago para avanzar.",
+    "storageCorrupted": "Los datos guardados estaban corruptos y se han reiniciado.",
+    "piInitFailed": "No se pudo iniciar el SDK de Pi. Las herramientas siguen funcionando.",
+    "invalidInput": "Algunas entradas no son válidas."
+  },
+  "empty": { "default": "Aún no hay nada aquí." }
+}

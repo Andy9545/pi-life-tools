@@ -1,0 +1,274 @@
+{
+  "site": { "name": "Pi Life Tools", "tagline": "Pi エコシステムのための人生ツール。" },
+  "language": {
+    "label": "言語",
+    "autoDetected": "自動検出",
+    "zh-TW": "繁體中文",
+    "zh-CN": "简体中文",
+    "en": "English",
+    "ja": "日本語",
+    "ko": "한국어",
+    "es": "Español"
+  },
+  "nav": { "home": "My Life", "settings": "設定" },
+  "common": {
+    "calculate": "計算する",
+    "recalculate": "再計算",
+    "reset": "リセット",
+    "save": "保存",
+    "saved": "保存しました",
+    "share": "共有",
+    "shared": "共有しました",
+    "download": "画像をダウンロード",
+    "preview": "プレビュー",
+    "close": "閉じる",
+    "back": "戻る",
+    "backHome": "My Life に戻る",
+    "result": "結果",
+    "generateCard": "ライフデータカードを作成",
+    "viewCard": "データカードを見る",
+    "disclaimer": "結果は目安であり、参考としてご利用ください。",
+    "years": "年",
+    "months": "ヶ月",
+    "weeks": "週",
+    "days": "日",
+    "hours": "時間",
+    "minutes": "分",
+    "percent": "%",
+    "loading": "読み込み中…",
+    "optional": "任意",
+    "perHour": "時間あたり",
+    "perMonth": "月額",
+    "fillAll": "項目を入力してください。"
+  },
+  "dashboard": {
+    "title": "My Life",
+    "subtitle": "あなたの人生ツールとデータを一箇所に。",
+    "lifeScore": "ライフスコア",
+    "lifeScoreEmpty": "ツールを使ってライフスコアを蓄積しましょう。",
+    "recentCards": "最近のデータカード",
+    "recentCardsEmpty": "保存したカードはまだありません。ツールから作成してみましょう。",
+    "tools": "人生ツール",
+    "welcome": "ようこそ"
+  },
+  "tools": {
+    "financial-health": {
+      "name": "財務の健康",
+      "tagline": "財務の健康スコアを確認。",
+      "icon": "💰",
+      "intro": "毎月の収支を入力して、財務の健康スコアを取得します。",
+      "inputs": {
+        "monthlyIncome": "月収",
+        "monthlyExpenses": "月間支出",
+        "monthlySavings": "毎月の貯蓄",
+        "debt": "借入総額",
+        "emergencyFund": "緊急資金"
+      },
+      "results": {
+        "savingsRate": "貯蓄率",
+        "incomeExpenseRatio": "支出比率",
+        "emergencyFundMonths": "緊急資金の月数",
+        "financialHealthScore": "財務健康スコア"
+      },
+      "rec": {
+        "savings": "収入の少なくとも 10% を貯蓄しましょう。",
+        "emergency": "3〜6ヶ月分の支出に相当する緊急資金を備えましょう。",
+        "debt": "借入が収入に対して高めです。返済計画を検討してください。",
+        "expenses": "支出が収入に近いです。支出を見直しましょう。",
+        "good": "財務の健康は安定しています。このまま続けましょう。"
+      },
+      "summary": "財務健康スコア：{score}/100。"
+    },
+    "compound-interest": {
+      "name": "複利計算",
+      "tagline": "貯蓄が時間とともにどう増えるかを見る。",
+      "icon": "📈",
+      "intro": "複利で貯蓄がどう増えるかを見ましょう。",
+      "inputs": {
+        "principal": "初期元本",
+        "monthlyContribution": "毎月の積立",
+        "annualRate": "年利回り",
+        "years": "投資年数"
+      },
+      "results": {
+        "finalAmount": "最終金額",
+        "totalPrincipal": "累計元本",
+        "totalInterest": "推定収益"
+      },
+      "note": "結果は目安であり、実際の投資収益を保証するものではありません。",
+      "summary": "最終金額：{amount}（{years}年）。",
+      "table": { "year": "年", "balance": "残高", "principal": "元本" }
+    },
+    "goal-planner": {
+      "name": "目標プランナー",
+      "tagline": "人生の目標を計画し追跡する。",
+      "icon": "🎯",
+      "intro": "人生の目標に向けた進捗を計画・追跡します。",
+      "inputs": {
+        "goalType": "目標の種類",
+        "goalAmount": "目標金額",
+        "currentAmount": "現在の金額",
+        "monthlyContribution": "毎月の積立",
+        "annualRate": "想定利回り",
+        "targetDate": "目標達成予定日"
+      },
+      "types": {
+        "savings": "貯蓄",
+        "travel": "旅行",
+        "emergency": "緊急資金",
+        "education": "教育",
+        "other": "その他"
+      },
+      "results": {
+        "progressPercent": "達成率",
+        "estimatedCompletion": "達成見込み時期",
+        "estimatedMonths": "見込み月数",
+        "monthlyNeeded": "必要な毎月の積立",
+        "remainingAmount": "目標までの差額"
+      },
+      "summary": "目標を {progress}% 達成。"
+    },
+    "life-time": {
+      "name": "ライフタイム",
+      "tagline": "人生のタイムラインを一目で。",
+      "icon": "⏳",
+      "intro": "人生のタイムラインを振り返ります。寿命は自分で設定する反思用の数値であり、予測ではありません。",
+      "inputs": {
+        "birthDate": "生年月日",
+        "lifeExpectancy": "想定寿命"
+      },
+      "results": {
+        "ageYears": "現在の年齢",
+        "remainingYears": "残りの年数",
+        "remainingMonths": "残りの月数",
+        "remainingWeeks": "残りの週数",
+        "lifeProgressPercent": "人生の進捗"
+      },
+      "note": "想定寿命は個人の設定値であり、反思のためのものです。医療予測ではありません。",
+      "summary": "人生の進捗：{progress}%。"
+    },
+    "mortgage": {
+      "name": "住宅ローン",
+      "tagline": "住宅ローンの毎月返済を概算。",
+      "icon": "🏠",
+      "intro": "毎月の返済額と総利息を概算します。",
+      "inputs": {
+        "homePrice": "物件価格",
+        "downPayment": "頭金",
+        "annualRate": "金利",
+        "years": "返済年数"
+      },
+      "results": {
+        "loanAmount": "借入金額",
+        "monthlyPayment": "毎月返済額",
+        "totalPayment": "総返済額",
+        "totalInterest": "総利息",
+        "interestRatio": "利息比率"
+      },
+      "summary": "毎月返済額：{amount}。"
+    },
+    "debt-payoff": {
+      "name": "借金返済",
+      "tagline": "返済への道筋を計画する。",
+      "icon": "💳",
+      "intro": "借金を完済するまでの期間を見積もります。",
+      "inputs": {
+        "debtAmount": "借入金額",
+        "annualRate": "金利",
+        "monthlyPayment": "毎月返済額"
+      },
+      "results": {
+        "payoffMonths": "完済までの期間",
+        "totalInterest": "総利息",
+        "totalPayment": "総返済額"
+      },
+      "summary": "約 {months}ヶ月で完済。"
+    },
+    "life-decision": {
+      "name": "人生の決断",
+      "tagline": "決断を順を追って整理する。",
+      "icon": "⚖️",
+      "intro": "各要素を1〜10で評価し、決断を整理します。これは思考の補助であり、答えではありません。",
+      "criteria": {
+        "income": "収入",
+        "growth": "成長",
+        "risk": "リスク",
+        "time": "時間",
+        "freedom": "自由",
+        "family": "家族",
+        "interest": "興味",
+        "stability": "安定性"
+      },
+      "results": {
+        "decisionScore": "決断スコア",
+        "strengths": "強みの要素",
+        "attentions": "注意すべき要素"
+      },
+      "scoreLabel": "1〜10",
+      "conclusion": "このスコアはあなた自身の評価を反映したもので、絶対的な答えではありません。",
+      "summary": "決断スコア：{score}/10。"
+    },
+    "time-value": {
+      "name": "時間の価値",
+      "tagline": "あなたの時間の価値を見る。",
+      "icon": "⏱️",
+      "intro": "あなたの時間の価値と、物が働く時間でどれだけかかるかを見ましょう。",
+      "inputs": {
+        "annualIncome": "年収",
+        "weeklyHours": "週の労働時間",
+        "weeksPerYear": "年間労働週数",
+        "itemPrice": "商品価格"
+      },
+      "results": {
+        "hourlyRate": "1時間の価値",
+        "minuteRate": "1分の価値",
+        "hoursForItem": "必要な労働時間"
+      },
+      "itemResult": "{price} の商品は約 {hours} 時間の労働に相当します。",
+      "summary": "あなたの時間は約 {rate} / 時間の価値があります。"
+    }
+  },
+  "dataCard": {
+    "header": "MY LIFE DATA",
+    "brand": "PI LIFE TOOLS",
+    "generate": "ライフデータカードを作成",
+    "preview": "プレビュー",
+    "save": "保存",
+    "share": "共有",
+    "download": "画像をダウンロード",
+    "saved": "カードを My Life に保存しました。",
+    "shareTitle": "私のライフデータカード"
+  },
+  "settings": {
+    "title": "設定",
+    "language": "言語",
+    "languageHint": "優先する言語を選択してください。",
+    "currency": "通貨",
+    "currencyHint": "金額の表示に使用します。",
+    "resetData": "すべてのデータをリセット",
+    "resetDataHint": "端末に保存したカード・履歴・設定を消去します。",
+    "resetConfirm": "すべてのローカルデータを削除しますか？",
+    "resetDone": "すべてのローカルデータをリセットしました。",
+    "piStatus": "Pi 接続",
+    "piAvailable": "接続済み",
+    "piUnavailable": "利用不可（Pi Browser 外で実行中）",
+    "piUser": "ログイン中のアカウント",
+    "piSignIn": "Pi でサインイン"
+  },
+  "errors": {
+    "empty": "値を入力してください。",
+    "notNumber": "有効な数字を入力してください。",
+    "negative": "値を負にすることはできません。",
+    "zero": "値を 0 にすることはできません。",
+    "tooLarge": "値が大きすぎます。",
+    "invalidDate": "有効な日付を入力してください。",
+    "logicalConflict": "これらの値の組み合わせは不合理です。",
+    "divideByZero": "0 で割ることはできません。",
+    "unreachable": "現在の入力ではこの目標を達成できません。",
+    "insufficientPayment": "毎月の返済額が利息より少ないです。返済額を増やしてください。",
+    "storageCorrupted": "保存データが破損したためリセットしました。",
+    "piInitFailed": "Pi SDK を開始できませんでした。ツールは引き続き利用できます。",
+    "invalidInput": "一部の入力が無効です。"
+  },
+  "empty": { "default": "まだデータはありません。" }
+}

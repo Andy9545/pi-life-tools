@@ -1,0 +1,274 @@
+{
+  "site": { "name": "Pi Life Tools", "tagline": "Pi 生態專用的人生工具。" },
+  "language": {
+    "label": "語言",
+    "autoDetected": "自動偵測",
+    "zh-TW": "繁體中文",
+    "zh-CN": "简体中文",
+    "en": "English",
+    "ja": "日本語",
+    "ko": "한국어",
+    "es": "Español"
+  },
+  "nav": { "home": "My Life", "settings": "設定" },
+  "common": {
+    "calculate": "開始計算",
+    "recalculate": "重新計算",
+    "reset": "重設",
+    "save": "儲存",
+    "saved": "已儲存",
+    "share": "分享",
+    "shared": "已分享",
+    "download": "下載圖片",
+    "preview": "預覽",
+    "close": "關閉",
+    "back": "返回",
+    "backHome": "返回 My Life",
+    "result": "計算結果",
+    "generateCard": "生成人生數據卡",
+    "viewCard": "查看數據卡",
+    "disclaimer": "結果為估算，僅供參考。",
+    "years": "年",
+    "months": "月",
+    "weeks": "週",
+    "days": "天",
+    "hours": "小時",
+    "minutes": "分鐘",
+    "percent": "%",
+    "loading": "載入中…",
+    "optional": "選填",
+    "perHour": "每小時",
+    "perMonth": "每月",
+    "fillAll": "請填寫欄位。"
+  },
+  "dashboard": {
+    "title": "My Life",
+    "subtitle": "你的人生工具與數據，一站整合。",
+    "lifeScore": "人生分數",
+    "lifeScoreEmpty": "使用各項工具來累積你的人生分數。",
+    "recentCards": "近期數據卡",
+    "recentCardsEmpty": "尚未儲存數據卡。從任一工具生成一張吧。",
+    "tools": "人生工具",
+    "welcome": "歡迎"
+  },
+  "tools": {
+    "financial-health": {
+      "name": "財務健康",
+      "tagline": "檢視你的財務健康分數。",
+      "icon": "💰",
+      "intro": "輸入每月收支，取得你的財務健康分數。",
+      "inputs": {
+        "monthlyIncome": "月收入",
+        "monthlyExpenses": "月支出",
+        "monthlySavings": "每月儲蓄",
+        "debt": "總負債",
+        "emergencyFund": "緊急預備金"
+      },
+      "results": {
+        "savingsRate": "儲蓄率",
+        "incomeExpenseRatio": "支出占比",
+        "emergencyFundMonths": "預備金覆蓋月數",
+        "financialHealthScore": "財務健康分數"
+      },
+      "rec": {
+        "savings": "建議至少儲蓄收入的 10%。",
+        "emergency": "建立 3-6 個月支出的緊急預備金。",
+        "debt": "負債相對收入偏高，可考慮還款計畫。",
+        "expenses": "支出接近收入，建議檢視開銷。",
+        "good": "你的財務健康狀況穩健，繼續保持。"
+      },
+      "summary": "財務健康分數：{score}/100。"
+    },
+    "compound-interest": {
+      "name": "複利計算",
+      "tagline": "看看儲蓄如何隨時間成長。",
+      "icon": "📈",
+      "intro": "看看複利如何讓你的儲蓄成長。",
+      "inputs": {
+        "principal": "初始本金",
+        "monthlyContribution": "每月投入",
+        "annualRate": "年化報酬率",
+        "years": "投資年限"
+      },
+      "results": {
+        "finalAmount": "最終金額",
+        "totalPrincipal": "累計本金",
+        "totalInterest": "預估收益"
+      },
+      "note": "結果為估算，不代表實際投資報酬。",
+      "summary": "最終金額：{amount}（{years} 年）。",
+      "table": { "year": "年度", "balance": "餘額", "principal": "本金" }
+    },
+    "goal-planner": {
+      "name": "人生目標",
+      "tagline": "規劃並追蹤你的人生目標。",
+      "icon": "🎯",
+      "intro": "規劃並追蹤你邁向人生目標的進度。",
+      "inputs": {
+        "goalType": "目標類型",
+        "goalAmount": "目標金額",
+        "currentAmount": "目前金額",
+        "monthlyContribution": "每月投入",
+        "annualRate": "預估報酬率",
+        "targetDate": "目標日期"
+      },
+      "types": {
+        "savings": "儲蓄",
+        "travel": "旅行",
+        "emergency": "緊急預備金",
+        "education": "教育",
+        "other": "其他"
+      },
+      "results": {
+        "progressPercent": "完成進度",
+        "estimatedCompletion": "預估完成時間",
+        "estimatedMonths": "預估月數",
+        "monthlyNeeded": "每月所需投入",
+        "remainingAmount": "距離目標差額"
+      },
+      "summary": "目標已完成 {progress}%。"
+    },
+    "life-time": {
+      "name": "人生時間",
+      "tagline": "一眼掌握你的人生時間軸。",
+      "icon": "⏳",
+      "intro": "回顧你的人生時間軸。預期壽命是你自行設定的反思數值，並非預測。",
+      "inputs": {
+        "birthDate": "出生日期",
+        "lifeExpectancy": "預期壽命"
+      },
+      "results": {
+        "ageYears": "目前年齡",
+        "remainingYears": "剩餘年數",
+        "remainingMonths": "剩餘月數",
+        "remainingWeeks": "剩餘週數",
+        "lifeProgressPercent": "人生進度"
+      },
+      "note": "預期壽命為個人設定，用於反思，非醫療或壽命預測。",
+      "summary": "人生進度：{progress}%。"
+    },
+    "mortgage": {
+      "name": "房貸",
+      "tagline": "估算你的房貸每月還款。",
+      "icon": "🏠",
+      "intro": "估算每月房貸還款與總利息。",
+      "inputs": {
+        "homePrice": "房價",
+        "downPayment": "頭期款",
+        "annualRate": "年利率",
+        "years": "貸款年限"
+      },
+      "results": {
+        "loanAmount": "貸款金額",
+        "monthlyPayment": "每月還款",
+        "totalPayment": "總還款",
+        "totalInterest": "總利息",
+        "interestRatio": "利息占比"
+      },
+      "summary": "每月還款：{amount}。"
+    },
+    "debt-payoff": {
+      "name": "債務還款",
+      "tagline": "規劃你的還債路徑。",
+      "icon": "💳",
+      "intro": "看看需要多久才能還清債務。",
+      "inputs": {
+        "debtAmount": "債務金額",
+        "annualRate": "利率",
+        "monthlyPayment": "每月還款"
+      },
+      "results": {
+        "payoffMonths": "還款時間",
+        "totalInterest": "總利息",
+        "totalPayment": "總付款"
+      },
+      "summary": "約 {months} 個月後還清。"
+    },
+    "life-decision": {
+      "name": "人生決策",
+      "tagline": "一步步釐清你的決定。",
+      "icon": "⚖️",
+      "intro": "為每個因素評分 1-10，釐清你的決定。這是思考輔助，不是答案。",
+      "criteria": {
+        "income": "收入",
+        "growth": "成長",
+        "risk": "風險",
+        "time": "時間",
+        "freedom": "自由",
+        "family": "家庭",
+        "interest": "興趣",
+        "stability": "穩定性"
+      },
+      "results": {
+        "decisionScore": "決策分數",
+        "strengths": "優勢因素",
+        "attentions": "需注意因素"
+      },
+      "scoreLabel": "1-10",
+      "conclusion": "此分數反映你自己的評分，並非絕對答案。",
+      "summary": "決策分數：{score}/10。"
+    },
+    "time-value": {
+      "name": "時間價值",
+      "tagline": "看看你的時間值多少。",
+      "icon": "⏱️",
+      "intro": "看看你的時間價值，以及商品換算成工作時數的真實成本。",
+      "inputs": {
+        "annualIncome": "年收入",
+        "weeklyHours": "每週工時",
+        "weeksPerYear": "每年工作週數",
+        "itemPrice": "商品價格"
+      },
+      "results": {
+        "hourlyRate": "每小時價值",
+        "minuteRate": "每分鐘價值",
+        "hoursForItem": "所需工作時數"
+      },
+      "itemResult": "{price} 的商品約需工作 {hours} 小時。",
+      "summary": "你的時間約值 {rate} / 小時。"
+    }
+  },
+  "dataCard": {
+    "header": "MY LIFE DATA",
+    "brand": "PI LIFE TOOLS",
+    "generate": "生成人生數據卡",
+    "preview": "預覽",
+    "save": "儲存",
+    "share": "分享",
+    "download": "下載圖片",
+    "saved": "數據卡已儲存至 My Life。",
+    "shareTitle": "我的人生數據卡"
+  },
+  "settings": {
+    "title": "設定",
+    "language": "語言",
+    "languageHint": "選擇你偏好的語言。",
+    "currency": "貨幣",
+    "currencyHint": "用於顯示金額。",
+    "resetData": "重置全部資料",
+    "resetDataHint": "清除本機已儲存的數據卡、紀錄與設定。",
+    "resetConfirm": "要刪除所有本機資料嗎？",
+    "resetDone": "所有本機資料已重置。",
+    "piStatus": "Pi 連線",
+    "piAvailable": "已連線",
+    "piUnavailable": "無法使用（目前不在 Pi Browser 中執行）",
+    "piUser": "登入帳號",
+    "piSignIn": "使用 Pi 登入"
+  },
+  "errors": {
+    "empty": "請輸入數值。",
+    "notNumber": "請輸入有效的數字。",
+    "negative": "數值不可為負數。",
+    "zero": "數值不可為 0。",
+    "tooLarge": "數值過大。",
+    "invalidDate": "請輸入有效的日期。",
+    "logicalConflict": "這些數值搭配起來不合理。",
+    "divideByZero": "無法除以 0。",
+    "unreachable": "目前輸入無法達成此目標。",
+    "insufficientPayment": "每月還款低於利息。請提高還款額才能還清。",
+    "storageCorrupted": "已儲存資料已損毀並已重置。",
+    "piInitFailed": "Pi SDK 無法啟動。工具仍可使用，Pi 功能受限。",
+    "invalidInput": "部分輸入無效。"
+  },
+  "empty": { "default": "目前沒有資料。" }
+}

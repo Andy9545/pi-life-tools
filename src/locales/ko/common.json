@@ -1,0 +1,274 @@
+{
+  "site": { "name": "Pi Life Tools", "tagline": "Pi 생태계 전용 인생 도구." },
+  "language": {
+    "label": "언어",
+    "autoDetected": "자동 감지",
+    "zh-TW": "繁體中文",
+    "zh-CN": "简体中文",
+    "en": "English",
+    "ja": "日本語",
+    "ko": "한국어",
+    "es": "Español"
+  },
+  "nav": { "home": "My Life", "settings": "설정" },
+  "common": {
+    "calculate": "계산하기",
+    "recalculate": "다시 계산",
+    "reset": "초기화",
+    "save": "저장",
+    "saved": "저장됨",
+    "share": "공유",
+    "shared": "공유됨",
+    "download": "이미지 다운로드",
+    "preview": "미리보기",
+    "close": "닫기",
+    "back": "뒤로",
+    "backHome": "My Life로 돌아가기",
+    "result": "결과",
+    "generateCard": "인생 데이터 카드 만들기",
+    "viewCard": "데이터 카드 보기",
+    "disclaimer": "결과는 추정치이며 참고용입니다.",
+    "years": "년",
+    "months": "개월",
+    "weeks": "주",
+    "days": "일",
+    "hours": "시간",
+    "minutes": "분",
+    "percent": "%",
+    "loading": "불러오는 중…",
+    "optional": "선택",
+    "perHour": "시간당",
+    "perMonth": "월",
+    "fillAll": "필드를 입력해 주세요."
+  },
+  "dashboard": {
+    "title": "My Life",
+    "subtitle": "당신의 인생 도구와 데이터를 한곳에.",
+    "lifeScore": "인생 점수",
+    "lifeScoreEmpty": "도구를 사용해 인생 점수를 쌓아보세요.",
+    "recentCards": "최근 데이터 카드",
+    "recentCardsEmpty": "아직 저장된 카드가 없습니다. 도구에서 하나 만들어보세요.",
+    "tools": "인생 도구",
+    "welcome": "환영합니다"
+  },
+  "tools": {
+    "financial-health": {
+      "name": "재무 건강",
+      "tagline": "재무 건강 점수를 확인하세요.",
+      "icon": "💰",
+      "intro": "월별 수입과 지출을 입력해 재무 건강 점수를 받아보세요.",
+      "inputs": {
+        "monthlyIncome": "월 수입",
+        "monthlyExpenses": "월 지출",
+        "monthlySavings": "월 저축",
+        "debt": "총 부채",
+        "emergencyFund": "비상금"
+      },
+      "results": {
+        "savingsRate": "저축률",
+        "incomeExpenseRatio": "지출 비율",
+        "emergencyFundMonths": "비상금 적용 월수",
+        "financialHealthScore": "재무 건강 점수"
+      },
+      "rec": {
+        "savings": "수입의 최소 10%를 저축하세요.",
+        "emergency": "3~6개월 지출에 해당하는 비상금을 마련하세요.",
+        "debt": "부채가 소득 대비 높습니다. 상환 계획을 고려해 보세요.",
+        "expenses": "지출이 소득에 가깝습니다. 지출을 점검해 보세요.",
+        "good": "재무 건강이 안정적입니다. 계속 유지하세요."
+      },
+      "summary": "재무 건강 점수: {score}/100."
+    },
+    "compound-interest": {
+      "name": "복리 계산",
+      "tagline": "저축이 시간에 따라 어떻게 자라는지 보세요.",
+      "icon": "📈",
+      "intro": "복리로 저축이 어떻게 자라는지 확인하세요.",
+      "inputs": {
+        "principal": "초기 원금",
+        "monthlyContribution": "월 적립액",
+        "annualRate": "연 수익률",
+        "years": "투자 기간"
+      },
+      "results": {
+        "finalAmount": "최종 금액",
+        "totalPrincipal": "누적 원금",
+        "totalInterest": "예상 수익"
+      },
+      "note": "결과는 추정치이며 실제 투자 수익을 보장하지 않습니다.",
+      "summary": "최종 금액: {amount}({years}년).",
+      "table": { "year": "연도", "balance": "잔액", "principal": "원금" }
+    },
+    "goal-planner": {
+      "name": "목표 플래너",
+      "tagline": "인생 목표를 계획하고 추적하세요.",
+      "icon": "🎯",
+      "intro": "인생 목표를 향한 진행도를 계획하고 추적하세요.",
+      "inputs": {
+        "goalType": "목표 유형",
+        "goalAmount": "목표 금액",
+        "currentAmount": "현재 금액",
+        "monthlyContribution": "월 적립액",
+        "annualRate": "예상 수익률",
+        "targetDate": "목표 달성일"
+      },
+      "types": {
+        "savings": "저축",
+        "travel": "여행",
+        "emergency": "비상금",
+        "education": "교육",
+        "other": "기타"
+      },
+      "results": {
+        "progressPercent": "달성률",
+        "estimatedCompletion": "달성 예정 시기",
+        "estimatedMonths": "예상 개월 수",
+        "monthlyNeeded": "필요한 월 적립액",
+        "remainingAmount": "목표까지 남은 금액"
+      },
+      "summary": "목표를 {progress}% 달성."
+    },
+    "life-time": {
+      "name": "인생 시간",
+      "tagline": "인생 타임라인을 한눈에 보세요.",
+      "icon": "⏳",
+      "intro": "인생 타임라인을 되돌아보세요. 기대 수명은 스스로 정한 반성용 값이지 예측이 아닙니다.",
+      "inputs": {
+        "birthDate": "생년월일",
+        "lifeExpectancy": "기대 수명"
+      },
+      "results": {
+        "ageYears": "현재 나이",
+        "remainingYears": "남은 연수",
+        "remainingMonths": "남은 개월 수",
+        "remainingWeeks": "남은 주 수",
+        "lifeProgressPercent": "인생 진행도"
+      },
+      "note": "기대 수명은 반성을 위한 개인 설정값이며 의료 예측이 아닙니다.",
+      "summary": "인생 진행도: {progress}%."
+    },
+    "mortgage": {
+      "name": "주택담보대출",
+      "tagline": "주택대출 월 상환액을 추정하세요.",
+      "icon": "🏠",
+      "intro": "월 상환액과 총 이자를 추정합니다.",
+      "inputs": {
+        "homePrice": "집값",
+        "downPayment": "계약금",
+        "annualRate": "금리",
+        "years": "상환 기간"
+      },
+      "results": {
+        "loanAmount": "대출 금액",
+        "monthlyPayment": "월 상환액",
+        "totalPayment": "총 상환액",
+        "totalInterest": "총 이자",
+        "interestRatio": "이자 비율"
+      },
+      "summary": "월 상환액: {amount}."
+    },
+    "debt-payoff": {
+      "name": "부채 상환",
+      "tagline": "부채에서 벗어나는 경로를 계획하세요.",
+      "icon": "💳",
+      "intro": "부채를 완제하는 데 걸리는 기간을 확인하세요.",
+      "inputs": {
+        "debtAmount": "부채 금액",
+        "annualRate": "금리",
+        "monthlyPayment": "월 상환액"
+      },
+      "results": {
+        "payoffMonths": "완제 기간",
+        "totalInterest": "총 이자",
+        "totalPayment": "총 상환액"
+      },
+      "summary": "약 {months}개월 후 완제."
+    },
+    "life-decision": {
+      "name": "인생 결정",
+      "tagline": "결정을 단계별로 정리하세요.",
+      "icon": "⚖️",
+      "intro": "각 요소를 1~10으로 평가해 결정을 정리하세요. 이는 생각을 돕는 도구일 뿐 정답이 아닙니다.",
+      "criteria": {
+        "income": "수입",
+        "growth": "성장",
+        "risk": "위험",
+        "time": "시간",
+        "freedom": "자유",
+        "family": "가족",
+        "interest": "흥미",
+        "stability": "안정성"
+      },
+      "results": {
+        "decisionScore": "결정 점수",
+        "strengths": "강점 요소",
+        "attentions": "주의 요소"
+      },
+      "scoreLabel": "1~10",
+      "conclusion": "이 점수는 당신의 평가를 반영한 것이며 절대적 정답이 아닙니다.",
+      "summary": "결정 점수: {score}/10."
+    },
+    "time-value": {
+      "name": "시간의 가치",
+      "tagline": "당신의 시간이 얼마인지 보세요.",
+      "icon": "⏱️",
+      "intro": "당신의 시간 가치와 물건이 일하는 시간으로 얼마인지 보세요.",
+      "inputs": {
+        "annualIncome": "연 소득",
+        "weeklyHours": "주당 근로시간",
+        "weeksPerYear": "연간 근로 주수",
+        "itemPrice": "물건 가격"
+      },
+      "results": {
+        "hourlyRate": "시간당 가치",
+        "minuteRate": "분당 가치",
+        "hoursForItem": "필요한 근로시간"
+      },
+      "itemResult": "{price} 물건은 약 {hours}시간의 노동에 해당합니다.",
+      "summary": "당신의 시간은 약 {rate}/시간의 가치가 있습니다."
+    }
+  },
+  "dataCard": {
+    "header": "MY LIFE DATA",
+    "brand": "PI LIFE TOOLS",
+    "generate": "인생 데이터 카드 만들기",
+    "preview": "미리보기",
+    "save": "저장",
+    "share": "공유",
+    "download": "이미지 다운로드",
+    "saved": "카드를 My Life에 저장했습니다.",
+    "shareTitle": "나의 인생 데이터 카드"
+  },
+  "settings": {
+    "title": "설정",
+    "language": "언어",
+    "languageHint": "선호하는 언어를 선택하세요.",
+    "currency": "통화",
+    "currencyHint": "금액 표시에 사용됩니다.",
+    "resetData": "모든 데이터 초기화",
+    "resetDataHint": "기기에 저장된 카드, 기록, 설정을 지웁니다.",
+    "resetConfirm": "모든 로컬 데이터를 삭제하시겠습니까?",
+    "resetDone": "모든 로컬 데이터가 초기화되었습니다.",
+    "piStatus": "Pi 연결",
+    "piAvailable": "연결됨",
+    "piUnavailable": "사용 불가 (Pi Browser 외부에서 실행 중)",
+    "piUser": "로그인 계정",
+    "piSignIn": "Pi로 로그인"
+  },
+  "errors": {
+    "empty": "값을 입력해 주세요.",
+    "notNumber": "유효한 숫자를 입력해 주세요.",
+    "negative": "값은 음수가 될 수 없습니다.",
+    "zero": "값은 0이 될 수 없습니다.",
+    "tooLarge": "값이 너무 큽니다.",
+    "invalidDate": "유효한 날짜를 입력해 주세요.",
+    "logicalConflict": "이 값들의 조합은 말이 되지 않습니다.",
+    "divideByZero": "0으로 나눌 수 없습니다.",
+    "unreachable": "현재 입력으로는 이 목표에 도달할 수 없습니다.",
+    "insufficientPayment": "월 상환액이 이자보다 적습니다. 상환액을 늘려주세요.",
+    "storageCorrupted": "저장된 데이터가 손상되어 초기화되었습니다.",
+    "piInitFailed": "Pi SDK를 시작할 수 없습니다. 도구는 계속 사용할 수 있습니다.",
+    "invalidInput": "일부 입력이 유효하지 않습니다."
+  },
+  "empty": { "default": "아직 데이터가 없습니다." }
+}

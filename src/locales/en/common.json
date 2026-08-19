@@ -1,0 +1,274 @@
+{
+  "site": { "name": "Pi Life Tools", "tagline": "Life tools for the Pi ecosystem." },
+  "language": {
+    "label": "Language",
+    "autoDetected": "Auto-detected",
+    "zh-TW": "繁體中文",
+    "zh-CN": "简体中文",
+    "en": "English",
+    "ja": "日本語",
+    "ko": "한국어",
+    "es": "Español"
+  },
+  "nav": { "home": "My Life", "settings": "Settings" },
+  "common": {
+    "calculate": "Calculate",
+    "recalculate": "Recalculate",
+    "reset": "Reset",
+    "save": "Save",
+    "saved": "Saved",
+    "share": "Share",
+    "shared": "Shared",
+    "download": "Download image",
+    "preview": "Preview",
+    "close": "Close",
+    "back": "Back",
+    "backHome": "Back to My Life",
+    "result": "Result",
+    "generateCard": "Generate Life Data Card",
+    "viewCard": "View Data Card",
+    "disclaimer": "Results are estimates for reference only.",
+    "years": "years",
+    "months": "months",
+    "weeks": "weeks",
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes",
+    "percent": "%",
+    "loading": "Loading…",
+    "optional": "optional",
+    "perHour": "per hour",
+    "perMonth": "per month",
+    "fillAll": "Please fill in the fields."
+  },
+  "dashboard": {
+    "title": "My Life",
+    "subtitle": "Your life tools and data, in one place.",
+    "lifeScore": "Life Score",
+    "lifeScoreEmpty": "Use the tools to build your Life Score.",
+    "recentCards": "Recent Data Cards",
+    "recentCardsEmpty": "No saved cards yet. Generate one from any tool.",
+    "tools": "Tools",
+    "welcome": "Welcome"
+  },
+  "tools": {
+    "financial-health": {
+      "name": "Financial Health",
+      "tagline": "Check your financial health score.",
+      "icon": "💰",
+      "intro": "Enter your monthly finances to get a financial health score.",
+      "inputs": {
+        "monthlyIncome": "Monthly Income",
+        "monthlyExpenses": "Monthly Expenses",
+        "monthlySavings": "Monthly Savings",
+        "debt": "Total Debt",
+        "emergencyFund": "Emergency Fund"
+      },
+      "results": {
+        "savingsRate": "Savings Rate",
+        "incomeExpenseRatio": "Expense Ratio",
+        "emergencyFundMonths": "Emergency Fund Coverage",
+        "financialHealthScore": "Financial Health Score"
+      },
+      "rec": {
+        "savings": "Aim to save at least 10% of your income.",
+        "emergency": "Build an emergency fund covering 3-6 months of expenses.",
+        "debt": "Your debt is high relative to income. Consider a payoff plan.",
+        "expenses": "Your expenses are close to your income. Review your spending.",
+        "good": "Your financial health looks solid. Keep it up."
+      },
+      "summary": "Financial health score: {score}/100."
+    },
+    "compound-interest": {
+      "name": "Compound Interest",
+      "tagline": "See how savings grow over time.",
+      "icon": "📈",
+      "intro": "See how your savings grow with compound interest.",
+      "inputs": {
+        "principal": "Initial Principal",
+        "monthlyContribution": "Monthly Contribution",
+        "annualRate": "Annual Return Rate",
+        "years": "Investment Years"
+      },
+      "results": {
+        "finalAmount": "Final Amount",
+        "totalPrincipal": "Total Principal",
+        "totalInterest": "Estimated Returns"
+      },
+      "note": "Estimates only — not a guarantee of actual investment returns.",
+      "summary": "Final amount: {amount} after {years} years.",
+      "table": { "year": "Year", "balance": "Balance", "principal": "Principal" }
+    },
+    "goal-planner": {
+      "name": "Goal Planner",
+      "tagline": "Plan and track your life goals.",
+      "icon": "🎯",
+      "intro": "Plan and track progress toward a life goal.",
+      "inputs": {
+        "goalType": "Goal Type",
+        "goalAmount": "Goal Amount",
+        "currentAmount": "Current Amount",
+        "monthlyContribution": "Monthly Contribution",
+        "annualRate": "Expected Return Rate",
+        "targetDate": "Target Date"
+      },
+      "types": {
+        "savings": "Savings",
+        "travel": "Travel",
+        "emergency": "Emergency Fund",
+        "education": "Education",
+        "other": "Other"
+      },
+      "results": {
+        "progressPercent": "Progress",
+        "estimatedCompletion": "Estimated Completion",
+        "estimatedMonths": "Estimated Months",
+        "monthlyNeeded": "Monthly Contribution Needed",
+        "remainingAmount": "Remaining to Goal"
+      },
+      "summary": "Goal {progress}% complete."
+    },
+    "life-time": {
+      "name": "Life Time",
+      "tagline": "See your life timeline at a glance.",
+      "icon": "⏳",
+      "intro": "Reflect on your life timeline. Life expectancy is your own setting, not a prediction.",
+      "inputs": {
+        "birthDate": "Birth Date",
+        "lifeExpectancy": "Life Expectancy"
+      },
+      "results": {
+        "ageYears": "Age",
+        "remainingYears": "Remaining Years",
+        "remainingMonths": "Remaining Months",
+        "remainingWeeks": "Remaining Weeks",
+        "lifeProgressPercent": "Life Progress"
+      },
+      "note": "Life expectancy is a personal setting for reflection — not a medical prediction.",
+      "summary": "Life progress: {progress}%."
+    },
+    "mortgage": {
+      "name": "Mortgage",
+      "tagline": "Estimate your mortgage payments.",
+      "icon": "🏠",
+      "intro": "Estimate your monthly mortgage payment and total interest.",
+      "inputs": {
+        "homePrice": "Home Price",
+        "downPayment": "Down Payment",
+        "annualRate": "Interest Rate",
+        "years": "Loan Term"
+      },
+      "results": {
+        "loanAmount": "Loan Amount",
+        "monthlyPayment": "Monthly Payment",
+        "totalPayment": "Total Payment",
+        "totalInterest": "Total Interest",
+        "interestRatio": "Interest Ratio"
+      },
+      "summary": "Monthly payment: {amount}."
+    },
+    "debt-payoff": {
+      "name": "Debt Payoff",
+      "tagline": "Plan your path out of debt.",
+      "icon": "💳",
+      "intro": "See how long it takes to become debt-free.",
+      "inputs": {
+        "debtAmount": "Debt Amount",
+        "annualRate": "Interest Rate",
+        "monthlyPayment": "Monthly Payment"
+      },
+      "results": {
+        "payoffMonths": "Payoff Time",
+        "totalInterest": "Total Interest",
+        "totalPayment": "Total Payment"
+      },
+      "summary": "Debt-free in about {months} months."
+    },
+    "life-decision": {
+      "name": "Life Decision",
+      "tagline": "Think through a decision step by step.",
+      "icon": "⚖️",
+      "intro": "Rate each factor 1-10 to think through a decision. This is a thinking aid, not an answer.",
+      "criteria": {
+        "income": "Income",
+        "growth": "Growth",
+        "risk": "Risk",
+        "time": "Time",
+        "freedom": "Freedom",
+        "family": "Family",
+        "interest": "Interest",
+        "stability": "Stability"
+      },
+      "results": {
+        "decisionScore": "Decision Score",
+        "strengths": "Strengths",
+        "attentions": "Factors to Watch"
+      },
+      "scoreLabel": "1-10",
+      "conclusion": "This score reflects your own ratings and is not a definitive answer.",
+      "summary": "Decision score: {score}/10."
+    },
+    "time-value": {
+      "name": "Time Value",
+      "tagline": "See what your time is worth.",
+      "icon": "⏱️",
+      "intro": "See what your time is worth and what things really cost in work hours.",
+      "inputs": {
+        "annualIncome": "Annual Income",
+        "weeklyHours": "Hours per Week",
+        "weeksPerYear": "Weeks per Year",
+        "itemPrice": "Item Price"
+      },
+      "results": {
+        "hourlyRate": "Hourly Value",
+        "minuteRate": "Minute Value",
+        "hoursForItem": "Work Hours for Item"
+      },
+      "itemResult": "A {price} item costs about {hours} work hours.",
+      "summary": "Your time is worth about {rate} per hour."
+    }
+  },
+  "dataCard": {
+    "header": "MY LIFE DATA",
+    "brand": "PI LIFE TOOLS",
+    "generate": "Generate Life Data Card",
+    "preview": "Preview",
+    "save": "Save",
+    "share": "Share",
+    "download": "Download image",
+    "saved": "Card saved to My Life.",
+    "shareTitle": "My Life Data Card"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "languageHint": "Choose your preferred language.",
+    "currency": "Currency",
+    "currencyHint": "Used for displaying amounts.",
+    "resetData": "Reset all data",
+    "resetDataHint": "Clears saved cards, history and settings on this device.",
+    "resetConfirm": "Delete all local data?",
+    "resetDone": "All local data has been reset.",
+    "piStatus": "Pi connection",
+    "piAvailable": "Connected",
+    "piUnavailable": "Not available (running outside Pi Browser)",
+    "piUser": "Signed in as",
+    "piSignIn": "Sign in with Pi"
+  },
+  "errors": {
+    "empty": "Please enter a value.",
+    "notNumber": "Please enter a valid number.",
+    "negative": "Value cannot be negative.",
+    "zero": "Value cannot be zero.",
+    "tooLarge": "Value is too large.",
+    "invalidDate": "Please enter a valid date.",
+    "logicalConflict": "These values don't make sense together.",
+    "divideByZero": "Cannot divide by zero.",
+    "unreachable": "This goal cannot be reached with the current inputs.",
+    "insufficientPayment": "Monthly payment is lower than the interest. Increase the payment to make progress.",
+    "storageCorrupted": "Saved data was corrupted and has been reset.",
+    "piInitFailed": "Pi SDK could not start. Tools still work; Pi features are limited.",
+    "invalidInput": "Some inputs are invalid."
+  },
+  "empty": { "default": "Nothing here yet." }
+}
