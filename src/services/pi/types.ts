@@ -45,7 +45,7 @@ export interface PiInitOptions {
 
 /** Minimal window.Pi surface we depend on. */
 export interface PiSdk {
-  init(options: PiInitOptions): void;
+  init(options: PiInitOptions): void | Promise<void>;
   authenticate(
     scopes: Scope[],
     onIncompletePaymentFound: (payment: PaymentDTO) => void,

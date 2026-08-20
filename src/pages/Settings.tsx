@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useI18n } from "@/services/i18n/context";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 import {
@@ -12,7 +12,9 @@ import {
   getPiUser,
   authenticatePi,
   getInitError,
+  subscribeAuth,
 } from "@/services/pi/piService";
+import type { PiUser } from "@/services/pi/types";
 
 const CURRENCIES = ["USD", "EUR", "JPY", "KRW", "TWD", "CNY", "GBP", "CAD", "AUD"];
 
@@ -20,8 +22,16 @@ export function Settings() {
   const { t, locale } = useI18n();
   void locale;
   const [settings, setSettings] = useState(getSettings());
-  const [piUser, setPiUser] = useState(getPiUser());
+  const [piUser, setPiUser] = useState<PiUser | null>(getPiUser());
   const [resetToast, setResetToast] = useState(false);
+
+  // Reflect auto-auth (on load) as well as manual sign-in in real time.
+  useEffect(() => {
+    const unsubscribe = subscribeAuth((user) => {
+      setPiUser(user);
+    });
+    return unsubscribe;
+  }, []);
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8 md:py-12">

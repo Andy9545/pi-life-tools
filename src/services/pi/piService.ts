@@ -13,11 +13,26 @@ let initialized = false;
 let initError: string | null = null;
 let auth: AuthResult | null = null;
 
+type AuthListener = (user: AuthResult["user"] | null) => void;
+const authListeners = new Set<AuthListener>();
+
 /** Reset module state — used by tests; safe to call anytime. */
 export function resetPiState(): void {
   initialized = false;
   initError = null;
   auth = null;
+  authListeners.clear();
+}
+
+function notifyAuth(): void {
+  const user = auth ? auth.user : null;
+  authListeners.forEach((cb) => cb(user));
+}
+
+/** Subscribe to auth changes (auto-auth on load, manual sign-in). Returns unsubscribe. */
+export function subscribeAuth(cb: AuthListener): () => void {
+  authListeners.add(cb);
+  return () => authListeners.delete(cb);
 }
 
 function sdk(): PiSdk | null {
@@ -47,9 +62,11 @@ export function getPiUser(): AuthResult["user"] | null {
 
 /**
  * Initialize the Pi SDK. Safe to call multiple times; no-ops after success.
- * Catches all errors so a broken/missing SDK never crashes the app.
+ * `Pi.init` is treated as a Promise and fully awaited before anything else
+ * uses the SDK (per App Studio integration prompt). Guards so a broken or
+ * missing SDK can never crash the app.
  */
-export function initPi(): { ok: boolean; error: string | null } {
+export async function initPi(): Promise<{ ok: boolean; error: string | null }> {
   if (initialized) return { ok: initError === null, error: initError };
   const pi = sdk();
   if (!pi) {
@@ -58,7 +75,7 @@ export function initPi(): { ok: boolean; error: string | null } {
     return { ok: false, error: initError };
   }
   try {
-    pi.init({ version: "2.0", sandbox: SANDBOX });
+    await pi.init({ version: "2.0", sandbox: SANDBOX });
     initialized = true;
     initError = null;
     return { ok: true, error: null };
@@ -80,14 +97,20 @@ function onIncompletePaymentFound(_payment: PaymentDTO): void {
 export async function authenticatePi(
   scopes: Scope[] = ["username"],
 ): Promise<AuthResult["user"] | null> {
+  // Ensure init fully settles before authenticating (App Studio prompt).
+  if (!initialized) {
+    await initPi();
+  }
   const pi = sdk();
-  if (!pi || !initialized || initError) return null;
+  if (!pi || initError) return null;
   try {
     const result = await pi.authenticate(scopes, onIncompletePaymentFound);
     auth = result;
+    notifyAuth();
     return result.user;
   } catch {
     auth = null;
+    notifyAuth();
     return null;
   }
 }

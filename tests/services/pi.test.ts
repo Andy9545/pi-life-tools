@@ -27,8 +27,8 @@ describe("piService — graceful degrade without SDK", () => {
     expect(isPiAvailable()).toBe(false);
   });
 
-  it("init fails safely with pi-unavailable (never throws)", () => {
-    const r = initPi();
+  it("init fails safely with pi-unavailable (never throws)", async () => {
+    const r = await initPi();
     expect(r.ok).toBe(false);
     expect(r.error).toBe("pi-unavailable");
     expect(getInitError()).toBe("pi-unavailable");
@@ -61,9 +61,9 @@ describe("piService — with mocked SDK", () => {
     return pi;
   }
 
-  it("init succeeds and calls Pi.init with version + sandbox", () => {
+  it("init succeeds and calls Pi.init with version + sandbox", async () => {
     const pi = mockPi();
-    const r = initPi();
+    const r = await initPi();
     expect(r.ok).toBe(true);
     expect(pi.init).toHaveBeenCalledWith({
       version: "2.0",
@@ -73,7 +73,7 @@ describe("piService — with mocked SDK", () => {
 
   it("authenticate returns the public user (token stays private)", async () => {
     mockPi();
-    initPi();
+    await initPi();
     const user = await authenticatePi(["username"]);
     expect(user).toEqual({ uid: "u1", username: "pioneer" });
     expect(getPiUser()?.username).toBe("pioneer");
@@ -82,9 +82,9 @@ describe("piService — with mocked SDK", () => {
     expect(JSON.stringify(user)).not.toContain("tok-123");
   });
 
-  it("share uses openShareDialog and returns true", () => {
+  it("share uses openShareDialog and returns true", async () => {
     const pi = mockPi();
-    initPi();
+    await initPi();
     expect(shareViaPi("My Card", "summary")).toBe(true);
     expect(pi.openShareDialog).toHaveBeenCalledWith("My Card", "summary");
   });
@@ -93,7 +93,7 @@ describe("piService — with mocked SDK", () => {
     mockPi({
       authenticate: vi.fn(() => Promise.reject(new Error("denied"))),
     });
-    initPi();
+    await initPi();
     const user = await authenticatePi(["username"]);
     expect(user).toBeNull();
     expect(isPiAuthenticated()).toBe(false);
