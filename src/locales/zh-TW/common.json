@@ -147,6 +147,25 @@
       "note": "預期壽命為個人設定，用於反思，非醫療或壽命預測。",
       "summary": "人生進度：{progress}%。"
     },
+    "life-days": {
+      "name": "生命天數計算器",
+      "tagline": "算算你已經活了多少天。",
+      "icon": "📅",
+      "intro": "輸入你的出生日期與計算日期，看看你已經生活了多少天、多少週，以及大約多少年。",
+      "inputs": {
+        "dateOfBirth": "出生日期",
+        "calculationDate": "計算日期"
+      },
+      "results": {
+        "daysLived": "已生活天數",
+        "weeksLived": "已生活週數",
+        "yearsLived": "已生活年數",
+        "nextMilestone": "下一個 1,000 天里程碑",
+        "daysUntilMilestone": "距離下一個里程碑"
+      },
+      "note": "結果以日期之間的完整天數計算。年數以平均一年 365.2425 天估算，僅供參考。",
+      "summary": "你已經生活了 {days} 天。"
+    },
     "mortgage": {
       "name": "房貸",
       "tagline": "估算你的房貸每月還款。",

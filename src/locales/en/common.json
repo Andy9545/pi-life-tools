@@ -147,6 +147,25 @@
       "note": "Life expectancy is a personal setting for reflection — not a medical prediction.",
       "summary": "Life progress: {progress}%."
     },
+    "life-days": {
+      "name": "Life Days Calculator",
+      "tagline": "See how many days you have lived.",
+      "icon": "📅",
+      "intro": "Enter your date of birth and a calculation date to see how many days, weeks, and approximate years you have lived.",
+      "inputs": {
+        "dateOfBirth": "Date of Birth",
+        "calculationDate": "Calculation Date"
+      },
+      "results": {
+        "daysLived": "Days Lived",
+        "weeksLived": "Weeks Lived",
+        "yearsLived": "Years Lived",
+        "nextMilestone": "Next 1,000-Day Milestone",
+        "daysUntilMilestone": "Days Until Milestone"
+      },
+      "note": "Results are calculated using the complete number of days between the two dates. Years are estimated using an average year of 365.2425 days and are for informational purposes only.",
+      "summary": "You have lived {days} days."
+    },
     "mortgage": {
       "name": "Mortgage",
       "tagline": "Estimate your mortgage payments.",

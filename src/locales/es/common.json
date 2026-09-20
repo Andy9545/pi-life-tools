@@ -147,6 +147,25 @@
       "note": "La expectativa de vida es una configuración personal para reflexionar — no es una predicción médica.",
       "summary": "Progreso de vida: {progress}%."
     },
+    "life-days": {
+      "name": "Calculadora de Días de Vida",
+      "tagline": "Descubre cuántos días has vivido.",
+      "icon": "📅",
+      "intro": "Introduce tu fecha de nacimiento y una fecha de cálculo para saber cuántos días, semanas y años aproximadamente has vivido.",
+      "inputs": {
+        "dateOfBirth": "Fecha de nacimiento",
+        "calculationDate": "Fecha de cálculo"
+      },
+      "results": {
+        "daysLived": "Días vividos",
+        "weeksLived": "Semanas vividas",
+        "yearsLived": "Años vividos",
+        "nextMilestone": "Próximo hito de 1.000 días",
+        "daysUntilMilestone": "Días hasta el próximo hito"
+      },
+      "note": "Los resultados se calculan utilizando el número completo de días entre las dos fechas. Los años se estiman utilizando un año promedio de 365,2425 días y se ofrecen únicamente como referencia.",
+      "summary": "Has vivido {days} días."
+    },
     "mortgage": {
       "name": "Hipoteca",
       "tagline": "Estima tus pagos mensuales de hipoteca.",
